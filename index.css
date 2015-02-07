@@ -30,7 +30,7 @@ nav {
   margin-top: 50px;
   max-width: 320px;
   overflow: auto;
-  position: absolute;
+  position: relative;
 }
 .container .square {
   width: 150px;
@@ -54,19 +54,21 @@ nav {
 }
 
 .topmost {
-  min-width: 200px;
+  min-width: 307px;
   min-height: 250px;
   float: left;
-  background: #fff;
+  background: #eee;
+  margin-bottom: 3px;
 }
 .container .square:hover::before {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 300px;
-  content: ' ';
-  background-color: inherit; /* magic */
-  min-width: 305px;
+  min-width: 307px;
   min-height: 100px;
-
+  margin-bottom: 3px;
+  content: ' ';
+  border-bottom: 3px white solid;
+  background-color: inherit; /* magic */
 }

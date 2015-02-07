@@ -1,0 +1,74 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header,
+nav {
+  margin: 0;
+}
+
+.header-nav-item {
+  display: inline-block;
+  padding-left: 20px
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-container {
+  padding-top: 100px;
+}
+
+.container {
+  margin-top: 50px;
+  max-width: 320px;
+  overflow: auto;
+  position: relative;
+}
+.container .square {
+  width: 150px;
+  height:150px;
+  background: gray;
+  margin: 2px 2px 2px 2px;
+  float: left;
+}
+
+#first {
+  background-color: red;
+}
+#second {
+  background-color: blue;
+}
+#third {
+  background-color: green;
+}
+#fourth {
+  background-color: yellow;
+}
+
+.topmost {
+  min-width: 307px;
+  min-height: 250px;
+  float: left;
+  background: #eee;
+  margin-bottom: 3px;
+}
+.container .square:hover::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 300px;
+  min-width: 307px;
+  min-height: 100px;
+  margin-bottom: 3px;
+  content: ' ';
+  border-bottom: 3px white solid;
+  background-color: inherit; /* magic */
+}

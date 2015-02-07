@@ -64,9 +64,8 @@ nav {
   top: 0;
   left: 0;
   bottom: 300px;
-  content: ' ';
-  background-color: inherit; /* magic */
   min-width: 305px;
   min-height: 100px;
-
+  content: ' ';
+  background-color: inherit; /* magic */
 }
